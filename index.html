@@ -1,49 +1,137 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Sinister Chimps</title>
+    <title>Sinister Chimps Media</title>
     <link rel="icon" type="image/x-icon" href="schimps.ico">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <style type="text/css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
             padding: 20px;
-	        background: black;
+            background: #111;
             color: white;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
         }
         .links {
-            margin-top: 20px;
+            margin: 15px 0;
         }
         .links a {
             margin: 0 10px;
             text-decoration: none;
-            color: #0066cc;
+            color: #4a9eff;
         }
         .links a:hover {
             text-decoration: underline;
         }
+        .announcement {
+            background: linear-gradient(135deg, #1a3a5c, #0d1f33);
+            border: 2px solid #4a9eff;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 700px;
+        }
+        .announcement h2 {
+            color: #4a9eff;
+            font-size: 1.8em;
+            margin-top: 0;
+        }
+        .announcement img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .announcement a {
+            display: inline-block;
+            background: #4a9eff;
+            color: #111;
+            font-weight: bold;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+        .announcement a:hover {
+            background: #6db3ff;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #333;
+            margin: 40px auto;
+            max-width: 700px;
+        }
+        .game-section {
+            margin: 30px auto;
+            max-width: 700px;
+        }
+        .game-section h2 {
+            font-size: 1.5em;
+        }
+        .game-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .game-section a.store-link {
+            display: inline-block;
+            background: #4a9eff;
+            color: #111;
+            font-weight: bold;
+            padding: 10px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin: 10px 5px;
+        }
+        .game-section a.store-link:hover {
+            background: #6db3ff;
+        }
     </style>
 </head>
 <body>
-    <h1>Out now!</h1>
-    <h2>
-   	 <div class="links">
-   	     <a href="https://www.youtube.com/channel/UCuUjz-yFE7SZ_5LqqWr98LQ">YouTube Channel</a>
-   	     <a href="https://www.guilded.gg/i/E0qwdVZ2">Guilded Server</a>
- 	 </div>	
-		<a href="https://www.meta.com/experiences/sinister-chimps/24129093033446351/">Go to Meta Store</a>
-    </h2>
+    <h1>SinisterChimpsMedia</h1>
+    <div class="links">
+        <a href="https://www.youtube.com/@lioshowVR">YouTube Channel</a>
+        <a href="https://discord.gg/hK3Tb9Ua4T">Discord Server</a>
+    </div>
 
-    <p><img src="sinisterchimps1.png" alt="Sinister Chimps Title" /><br />
-    <img src="aeiutghwre.png" alt="Screenshot 1" /><br />
-    <img src="afou.png" alt="Sinister Chimps Title" /><br /></p>
+    <div class="announcement">
+        <h2>Axolotlz! - Releasing Soon!</h2>
+        <img src="axolotlz/thumbnail2.png" alt="Axolotlz! Announcement" />
+        <p>Our brand new VR game is coming to Meta Quest. Stay tuned!</p>
+        <a href="axolotlz/index.html">Learn More</a>
+    </div>
+
+    <hr />
+
+    <div class="game-section">
+        <h2>Axolotlz!</h2>
+        <p>A new VR experience on Meta Quest - coming soon.</p>
+        <a class="store-link" href="axolotlz/index.html">Game Page</a>
+        <a class="store-link" href="axolotlz/privacy.html">Privacy Policy</a>
+    </div>
+
+    <hr />
+
+    <div class="game-section">
+        <h2>Sinister Chimps</h2>
+        <p>Out now on Meta Quest!</p>
+        <img src="chimps/sinisterchimps1.png" alt="Sinister Chimps Title" />
+        <br />
+        <a class="store-link" href="https://www.meta.com/experiences/sinister-chimps/24129093033446351/">Meta Store</a>
+        <a class="store-link" href="chimps/privacy.html">Privacy Policy</a>
+        <br /><br />
+        <img src="chimps/aeiutghwre.png" alt="Sinister Chimps Screenshot 1" /><br />
+        <img src="chimps/afou.png" alt="Sinister Chimps Screenshot 2" />
+    </div>
 
 </body>
 </html>
