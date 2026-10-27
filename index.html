@@ -1,137 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sinister Chimps Media</title>
-    <link rel="icon" type="image/x-icon" href="schimps.ico">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-            background: #111;
-            color: white;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .links {
-            margin: 15px 0;
-        }
-        .links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #4a9eff;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
-        .announcement {
-            background: linear-gradient(135deg, #1a3a5c, #0d1f33);
-            border: 2px solid #4a9eff;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 30px auto;
-            max-width: 700px;
-        }
-        .announcement h2 {
-            color: #4a9eff;
-            font-size: 1.8em;
-            margin-top: 0;
-        }
-        .announcement img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin: 15px 0;
-        }
-        .announcement a {
-            display: inline-block;
-            background: #4a9eff;
-            color: #111;
-            font-weight: bold;
-            padding: 12px 30px;
-            border-radius: 6px;
-            text-decoration: none;
-            margin-top: 10px;
-            font-size: 1.1em;
-        }
-        .announcement a:hover {
-            background: #6db3ff;
-        }
-        hr {
-            border: none;
-            border-top: 1px solid #333;
-            margin: 40px auto;
-            max-width: 700px;
-        }
-        .game-section {
-            margin: 30px auto;
-            max-width: 700px;
-        }
-        .game-section h2 {
-            font-size: 1.5em;
-        }
-        .game-section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin: 10px 0;
-        }
-        .game-section a.store-link {
-            display: inline-block;
-            background: #4a9eff;
-            color: #111;
-            font-weight: bold;
-            padding: 10px 24px;
-            border-radius: 6px;
-            text-decoration: none;
-            margin: 10px 5px;
-        }
-        .game-section a.store-link:hover {
-            background: #6db3ff;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home -Sinister Chimps Studios</title>
+  <link rel="preload" href="JcFont-Regular.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>SinisterChimpsMedia</h1>
-    <div class="links">
-        <a href="https://www.youtube.com/@lioshowVR">YouTube Channel</a>
-        <a href="https://discord.gg/hK3Tb9Ua4T">Discord Server</a>
+  <div class="script-warning" id="scriptWarning">
+    ⚠️ Warning: Some site features require JavaScript. If the email popup does not appear, refresh the page or check that the script file is loading.
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <img class="site-logo" src="logo.png" alt="Sinister Chimps Studios logo" />
+      <span>Sinister Chimps Studios</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#games">Games</a>
+        <a href="#contact">Contact</a>
+        <a href="#credits">Credits</a>
+        <a href="#fandom">Forum</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="announcement">
-        <h2>Axolotlz! - Releasing Soon!</h2>
-        <img src="axolotlz/thumbnail2.png" alt="Axolotlz! Announcement" />
-        <p>Our brand new VR game is coming to Meta Quest. Stay tuned!</p>
-        <a href="axolotlz/index.html">Learn More</a>
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-content">
+        <div class="hero-logo">
+          <img src="logo.png" alt="Sinister Chimps Studios logo" />
+        </div>
+        <h1>Sinister Chimps Studios</h1>
+        <p>Sinister Chimps Studios creates VR, PC, CONSOLE, and MOBILE games that are wild, adventurous, and full of excitement.</p>
+        <div class="button-group">
+          <a class="button" href="#games">Our Games</a>
+          <a class="button" href="https://www.youtube.com/@SinisterChimpsStudios" target="_blank" rel="noopener noreferrer">YouTube Channel</a>
+          <a class="button" href="https://discord.gg/MWeyDXbsxy" target="_blank" rel="noopener noreferrer">Discord Server</a>
+          <a class="button secondary" id="openContactLink" href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>Sinister Chimps Studios is a game studio consisting of passionate developers creating unique and engaging experiences.</p>
+      </div>
+    </section>
+
+    <section id="games" class="section feature-grid">
+      <div class="container">
+        <h2>Our Games</h2>
+        <div class="feature-cards">
+          <article class="card">
+            <h3><a class="game-link" href="https://www.meta.com/experiences/sinister-chimps/24129093033446351/" target="_blank" rel="noopener noreferrer">Sinister Chimps</a></h3>
+            <a class="button" href="privacy/scprivacy.html">Privacy Policy</a>
+            <p>Sinister Chimps is a VR Game Using the Gorilla Locomotive System. Chimp around with your friends in a horror based, and terrifying world!</p>
+          </article>
+          <article class="card">
+            <h3><a class="game-link" href="https://www.meta.com/experiences/axolotlz/25761567226804396/" target="_blank" rel="noopener noreferrer">Axolotlz!</a></h3>
+            <a class="button" href="privacy/axoprivacy.html">Privacy Policy</a>
+            <p>In Axolotlz! we have an amazing community and amazing moderators to ban those who are being bad. You can run around in levels and put on nice accessories. You can run away from a scary monster in the horror mode, or fight to the death in the PVP mode. Go play Axolotlz!</p>
+          </article>
+        </div>
+        <div class="sol-banner">
+          <div class="sol-logo-wrap">
+            <img class="sol-logo" src="SOL LOGO.png" alt="SOL logo" />
+          </div>
+          <div class="sol-copy">
+            <p class="sol-headline"><a class="game-link" href="sol/sol.html">SOL</a></p>
+            <p class="sol-subtitle">OUR AI ASSISTANT:</p>
+            <p class="sol-description">SOL is our AI assistant designed for developers to make python projects, scripting, and can even open apps!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Ready to start something new? Drop us a message and we'll follow up shortly.</p>
+        <button class="button" id="openContactForm">Contact Us!</button>
+      </div>
+    </section>
+
+    <section id="credits" class="section credits-section">
+      <div class="container">
+        <h2>Credits</h2>
+        <p>lioshow is the lead developer of Sinister Chimps Studios and the CEO.</p>
+        <p>jcmcc is our secondary developer and second in command AND the font owner.</p>
+        <p>mrtoppug is our talented artist and graphic designer.</p>
+      </div>
+    </section>
+
+    <section id="fandom" class="section fandom-section">
+      <div class="container">
+        <h2>Forum</h2>
+        <p>Share fan art, favorite moments, or just chat!</p>
+
+        <form id="fandomForm" class="fandom-form">
+          <div class="form-grid">
+            <label>
+              <span>Name</span>
+              <input type="text" id="fandomName" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Link URL (optional)</span>
+              <input type="url" id="fandomLink" placeholder="https://example.com" />
+            </label>
+            <label>
+              <span>Image file (optional)</span>
+              <input type="file" id="fandomImage" accept="image/*" />
+            </label>
+          </div>
+          <label>
+            <span>Your message</span>
+            <textarea id="fandomMessage" rows="5" placeholder="Type anything you want to share about our games..." required></textarea>
+          </label>
+          <button type="submit" class="button">Post to Forum</button>
+        </form>
+
+        <div id="fandomPosts" class="fandom-posts"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="contactModal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeContactForm" aria-label="Close form">×</button>
+      <h2 id="modalTitle">Send us a message</h2>
+      <form id="contactForm">
+        <label>
+          Your name
+          <input type="text" id="senderName" placeholder="Your name" required />
+        </label>
+        <label>
+          Your email
+          <input type="email" id="senderEmail" placeholder="you@example.com" required />
+        </label>
+        <label>
+          Subject
+          <input type="text" id="messageSubject" placeholder="What is this about?" required />
+        </label>
+        <label>
+          Message
+          <textarea id="messageBody" rows="6" placeholder="Type your message here..." required></textarea>
+        </label>
+        <label>
+          Attach files
+          <input type="file" id="attachmentInput" multiple />
+        </label>
+        <p class="attachment-list" id="attachmentList">No files selected.</p>
+        <div class="modal-actions">
+          <button type="submit" class="button">Send</button>
+          <button type="button" class="button secondary" id="cancelContactForm">Cancel</button>
+        </div>
+      </form>
     </div>
+  </div>
 
-    <hr />
-
-    <div class="game-section">
-        <h2>Axolotlz!</h2>
-        <p>A new VR experience on Meta Quest - coming soon.</p>
-        <a class="store-link" href="axolotlz/index.html">Game Page</a>
-        <a class="store-link" href="axolotlz/privacy.html">Privacy Policy</a>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Sinister Chimps Studios</p>
     </div>
+  </footer>
 
-    <hr />
-
-    <div class="game-section">
-        <h2>Sinister Chimps</h2>
-        <p>Out now on Meta Quest!</p>
-        <img src="chimps/sinisterchimps1.png" alt="Sinister Chimps Title" />
-        <br />
-        <a class="store-link" href="https://www.meta.com/experiences/sinister-chimps/24129093033446351/">Meta Store</a>
-        <a class="store-link" href="chimps/privacy.html">Privacy Policy</a>
-        <br /><br />
-        <img src="chimps/aeiutghwre.png" alt="Sinister Chimps Screenshot 1" /><br />
-        <img src="chimps/afou.png" alt="Sinister Chimps Screenshot 2" />
-    </div>
-
+  <script src="emailsettings.js?v=2"></script>
+  <script src="forum.js?v=2"></script>
 </body>
 </html>
