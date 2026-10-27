@@ -1,0 +1,45 @@
+@font-face {
+	font-family: 'JcFont';
+	src: url('../JcFont-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'JcFont', sans-serif;
+	background: radial-gradient(circle at top, #2b4830 0%, #132a17 55%);
+	color: #000;
+	line-height: 1.7;
+}
+
+h1 {
+	text-align: center;
+}
+
+.button {
+	display: block;
+	width: fit-content;
+	margin: 0 auto 1.5rem;
+	padding: 0.75rem 1.4rem;
+	background: #64d17b;
+	color: #fff;
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.button:hover {
+	background: #2bcf75;
+}
+
+.container {
+	width: min(1100px, calc(100% - 2rem));
+	margin: 0 auto;
+}
+
